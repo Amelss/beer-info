@@ -489,12 +489,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.block{
-  display: block;
-}
-
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -503,6 +503,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-44{
   height: 11rem;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .justify-center{
@@ -667,17 +671,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
-  .md\:mx-96{
-    margin-left: 24rem;
-    margin-right: 24rem;
-  }
-
   .md\:block{
     display: block;
-  }
-
-  .md\:flex{
-    display: flex;
   }
 
   .md\:hidden{
@@ -695,5 +690,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mx-96{
+    margin-left: 24rem;
+    margin-right: 24rem;
   }
 }

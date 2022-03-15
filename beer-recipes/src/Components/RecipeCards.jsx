@@ -32,10 +32,10 @@ export default function RecipeCards() {
   
   return (
     <div className="px-5 py-10">
-      <div className="bg-slate-100 rounded shadow-md pb-5 md:mx-96 ">
+      <div className="bg-slate-100 rounded shadow-md pb-5 xl:mx-96 ">
         {beerData.map((beers) => (
           <div key={id}>
-            <div className="block md:flex">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
               <h1 className="text-center text-1xl py-4 md:hidden">
                 {beers.name}
               </h1>
