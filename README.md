@@ -7,3 +7,4 @@
 - This project is done in React and uses Tailwind as the CSS framework
 - This app is fully responsive
 - This was a API practice app to practice using API's for the first time.
+Check it out here/: https://ameley-random-beer-generator.netlify.app/
