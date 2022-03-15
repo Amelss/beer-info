@@ -9,6 +9,8 @@ export default function Home( ) {
   const [beerData, setBeerData] = useState([]);
   const { id } = useParams();
 
+  
+
   const getBeers = async () => {
     await axios
       .get(`https://api.punkapi.com/v2/beers/random`)
@@ -23,6 +25,11 @@ export default function Home( ) {
   useEffect(() => {
     getBeers();
   }, []);
+
+  const handleClick = (e) => {
+    e.preventDefault() 
+    getBeers()
+  }
 
   return (
     <div className='px-5 py-10'>
@@ -40,9 +47,9 @@ export default function Home( ) {
             </p>
           </div>
         ))}
-        <Link to={`recipe-card`}><button className='mx-auto text-center'>View More Info</button></Link>
+        <Link to={`recipe-card`}><button className='mx-auto'>View More Info</button></Link>
       </div>
-      <button>Click For Another Beer </button>
+      <button onClick={handleClick}>Click For Another Beer </button>
     </div>
   );
 }
