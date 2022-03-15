@@ -1,4 +1,4 @@
-# beer-info
+# Awesome Beer
 
 ## Information about the project
 
