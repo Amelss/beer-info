@@ -7,11 +7,7 @@ function App() {
   return (
     <div className="font-fredoka bg-white">
       <Header />
-    
-     
       <RecipeCards />
-    
-     
     </div>
   );
 }
